@@ -1,5 +1,13 @@
 import styled from 'styled-components'
 
+export const SectionContainer = styled.section`
+  min-width: 1200px;
+  display: flex;
+  justify-content: center;
+`
+
+export const ResponsiveContainer = styled.div``
+
 export const ContentLogo = styled.div`
   padding-top: 280px;
   position: absolute;
