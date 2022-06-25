@@ -17,6 +17,12 @@ export const ContentLogo = styled.div`
   background-size: 400px 338px;
   background-position: center;
 `
+
+export const MetricsContainer = styled.div`
+  margin-left: 623px;
+  padding-top: 150px;
+`
+
 export const AwardsContainer = styled.div`
   margin: 50px 0px 140px 623px;
   display: flex;

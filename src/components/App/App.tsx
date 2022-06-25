@@ -2,6 +2,7 @@ import { ThemeProvider } from 'styled-components'
 
 import { GlobalStyle } from '../../styles/GlobalStyles'
 import theme from '../../styles/Theme'
+import MetricItem from '../MetricItem/MetricItem'
 
 import * as Styled from './App.style'
 
@@ -10,6 +11,27 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Styled.ContentLogo>2021년 12월 기준</Styled.ContentLogo>
+
+      <Styled.MetricsContainer>
+        <MetricItem
+          duration={2000}
+          endNumber={700}
+          boldContent="만 명"
+          normalContent="의 여행자"
+        />
+        <MetricItem
+          duration={2000}
+          endNumber={100}
+          boldContent="만 개"
+          normalContent="의 여행 리뷰"
+        />
+        <MetricItem
+          duration={2000}
+          endNumber={470}
+          boldContent="만 개"
+          normalContent="의 여행 일정"
+        />
+      </Styled.MetricsContainer>
 
       <Styled.AwardsContainer>
         <Styled.AwardItem imgUrl="/images/play-store2x.png">
