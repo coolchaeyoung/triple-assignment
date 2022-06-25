@@ -17,3 +17,23 @@ export const ContentLogo = styled.div`
   background-size: 400px 338px;
   background-position: center;
 `
+export const AwardsContainer = styled.div`
+  margin: 50px 0px 140px 623px;
+  display: flex;
+  gap: 39px;
+  white-space: nowrap;
+`
+
+export const AwardItem = styled.div<{ imgUrl: string }>`
+  padding: 5px 0 5px 62px;
+  position: relative;
+  height: 54px;
+  color: ${({ theme }) => theme.grayColor3};
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: 700;
+
+  background-image: url(${(props) => props.imgUrl});
+  background-repeat: no-repeat;
+  background-size: 54px 54px;
+`
