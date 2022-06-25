@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { FadeInMoveUpContainer } from '../../styles/GlobalStyles'
+
 export const SectionContainer = styled.section`
   min-width: 1200px;
   display: flex;
@@ -8,7 +10,7 @@ export const SectionContainer = styled.section`
 
 export const ResponsiveContainer = styled.div``
 
-export const ContentLogo = styled.div`
+export const ContentLogo = styled(FadeInMoveUpContainer)`
   padding-top: 280px;
   position: absolute;
   top: 150px;
@@ -26,12 +28,12 @@ export const ContentLogo = styled.div`
   background-position: center;
 `
 
-export const MetricsContainer = styled.div`
+export const MetricsContainer = styled(FadeInMoveUpContainer)`
   margin-left: 623px;
   padding-top: 150px;
 `
 
-export const AwardsContainer = styled.div`
+export const AwardsContainer = styled(FadeInMoveUpContainer)`
   margin: 50px 0px 140px 623px;
   display: flex;
   gap: 39px;

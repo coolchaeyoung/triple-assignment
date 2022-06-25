@@ -12,9 +12,11 @@ function App() {
       <GlobalStyle />
       <Styled.SectionContainer>
         <Styled.ResponsiveContainer>
-          <Styled.ContentLogo>2021년 12월 기준</Styled.ContentLogo>
+          <Styled.ContentLogo duration="700ms" delay="0ms">
+            2021년 12월 기준
+          </Styled.ContentLogo>
 
-          <Styled.MetricsContainer>
+          <Styled.MetricsContainer duration="700ms" delay="100ms">
             <MetricItem
               duration={2000}
               endNumber={700}
@@ -35,7 +37,7 @@ function App() {
             />
           </Styled.MetricsContainer>
 
-          <Styled.AwardsContainer>
+          <Styled.AwardsContainer duration="700ms" delay="200ms">
             <Styled.AwardItem imgUrl="/images/play-store2x.png">
               2018 구글 플레이스토어
               <br />
