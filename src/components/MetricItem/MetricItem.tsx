@@ -22,11 +22,13 @@ function MetricItem({
 
   useEffect(() => {
     const animationHandler = (progress = 0) => {
-      setCount(Math.round(endNumber * easeOutExpo(progress)))
+      setCount(Math.ceil(endNumber * easeOutExpo(progress)))
+
       if (progress >= 1) {
         cancelAnimationFrame(requestAnimationFrameRef.current)
         return
       }
+
       requestAnimationFrameRef.current = requestAnimationFrame((timestamp) =>
         animationHandler(timestamp / duration),
       )
